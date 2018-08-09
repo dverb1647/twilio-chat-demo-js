@@ -10,13 +10,13 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
-  <div id="login" class="popup">
+  <!-- <div id="login" class="popup">
     <h3>Log In</h3>
     <input id="login-name" placeholder="Identity"></input>
     <button id="login-button" class="red-button">Log In As Guest</button>
     <p>-or-</p>
     <div class="g-signin2" data-onsuccess="googleLogIn" data-theme="light"></div>
-  </div>
+  </div> -->
   <div id="add-member" class="popup">
     <h3>Add User<div class="remove-button glyphicon glyphicon-remove"></div></h3>
     <input id="add-identity" placeholder="Identity"></input>
@@ -51,29 +51,17 @@
       <div id="presence"></div>
     </div>
     <div id="channels">
-      <div id="invited-channels">
-        <ul></ul>
-      </div>
-      <div id="my-channels">
-        <ul></ul>
-      </div>
-      <div id="known-channels">
-        <ul></ul>
-      </div>
-      <div id="public-channels">
-        <ul></ul>
-      </div>
       <div id="sidebar-footer">
         <button id="create-channel-button" class="red-button">Create Channel</button>
       </div>
     </div>
   </div>
 
-  <div id="no-channel">
+  <!-- <div id="no-channel">
     <p>You are not currently viewing a Channel.</p>
-  </div>
+  </div> -->
 
-  <div id="channel">
+  <div id="no-channel">
     <div id="channel-info">
       <h1 id="channel-title"></h1>
       <h2 id="channel-desc"></h2>
@@ -109,6 +97,7 @@
   <script src="https://media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.min.js"></script>
 
   <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="text/javascript" src="/js/username.js"></script>
   <script type="text/javascript" src="/js/md5.js"></script>
   <script type="text/javascript" src="/js/index.js"></script>
 </body>
